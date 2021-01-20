@@ -22,6 +22,8 @@ Explain the schemas, including diagrams or what-have-you
 
 ### (1) Where has the Common Loon been sighted by the NABBS in the years 2000-2019 in NY state?
 
+XXX: birds.name has an index we did not create yet - check for other non-default indexes, too
+
 {% include copy-clipboard.html %}
 ~~~ sql
 WITH loon_sightings AS (SELECT st_collect(routes.geom) AS the_geom FROM birds.birds, birds.observations, birds.routes WHERE birds.name = 'Common Loon' AND birds.id = observations.bird_id AND observations.route_id = routes.id) SELECT st_asgeojson(the_geom) FROM loon_sightings;
