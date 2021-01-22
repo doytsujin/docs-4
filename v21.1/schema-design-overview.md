@@ -22,7 +22,7 @@ Database objects make up the first level of the [CockroachDB naming hierarchy](s
 To avoid confusion with the general term "[database](https://en.wikipedia.org/wiki/Database)", throughout this guide we refer to the logical object as a *database*, to CockroachDB by name, and to a deployment of CockroachDB as a [*cluster*](architecture/overview.html#terms).
 {{site.data.alerts.end}}
 
-For guidance on creating databases, see [Create a Database and User-defined Schema](schema-design-database-schema.html).
+For guidance on creating databases, see [Create a Database](schema-design-database.html).
 
 ### Schemas
 
@@ -34,7 +34,7 @@ By default, all objects in the third level of the naming hierarchy (e.g., tables
 To avoid confusion with the general term "[schema](https://en.wiktionary.org/wiki/schema)", in this guide we refer to the logical object as a *user-defined schema*, and to the relationship structure of logical objects in a cluster as a *database schema*.
 {{site.data.alerts.end}}
 
-For guidance on creating user-defined schemas, see [Create a Database and User-defined Schema](schema-design-database-schema.html).
+For guidance on creating user-defined schemas, see [Create a User-defined Schema](schema-design-schema.html).
 
 ### Tables
 
@@ -104,7 +104,7 @@ We do not recommend using client drivers or ORM frameworks to execute database s
 
 ## See also
 
-- [Create a Database and User-defined Schema](schema-design-database-schema.html)
+- [Create a Database](schema-design-database.html)
 - [CockroachDB naming hierarchy](sql-name-resolution.html#naming-hierarchy)
 - [Authorization](authorization.html)
 - [Liquibase tutorial](liquibase.html)
